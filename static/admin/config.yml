@@ -24,6 +24,7 @@ collections:
     folder: "src/pages/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: blog/{{slug}}
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string", i18n: true}
@@ -33,7 +34,6 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown", i18n: true}
       - {label: "Tags", name: "tags", widget: "list"}
-    preview_path: blog/{{slug}}
 
   - name: "pages"
     label: "Pages"
